@@ -1,0 +1,3 @@
+<?php
+
+const DEFAULT_STRING_LENGTH = 255;

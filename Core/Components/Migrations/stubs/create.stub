@@ -1,0 +1,17 @@
+<?php
+use Core\Components\Migrations\Migration;
+
+class CreateMigration extends Migration
+{
+	public function up()
+	{
+		$this->DBBuilder->create('table_name', [
+			$this->table->increment('id'),
+		]);
+	}
+
+	public function drop()
+	{
+		$this->DBBuilder->drop('table_name');
+	}
+}
